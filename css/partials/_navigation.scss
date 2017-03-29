@@ -19,12 +19,12 @@ input[type=checkbox]:checked ~ .outterWrapper {
 .navigation__list {
 	position: fixed;
 	width:30%;
-	background:black;
+	background: #262422;
 	top:0;
 	bottom:0;
 	margin:0;
 	padding:0;
-	box-shadow:0 0 10px black;
+	box-shadow:0 0 5px black;
 	right:-30%;
 	z-index: 10;
 	-webkit-transition: all 0.5s;
