@@ -46,9 +46,10 @@
 			padding-right: 10px;
 		}
 	}
-	.contact__map iframe {
+	#map {
 		width: 100%;
 		height: 500px;
+		background-color: grey;
 	}
 }
 

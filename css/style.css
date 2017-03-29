@@ -914,9 +914,10 @@ input[type=checkbox]:checked ~ .outterWrapper {
     color: #EC9145; }
     .contact__leftSection .contact__socialMedia i {
       padding-right: 10px; }
-  .contact__leftSection .contact__map iframe {
+  .contact__leftSection #map {
     width: 100%;
-    height: 500px; }
+    height: 500px;
+    background-color: grey; }
 
 .contact__rightSection {
   border: 1px solid black;

@@ -421,9 +421,26 @@
 								<i class="fa fa-instagram" aria-hidden="true"></i>
 								<i class="fa fa-yelp" aria-hidden="true"></i>
 							</div>
-							<div class="contact__map">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.942167304079!2d13.376647516131824!3d52.51638567981343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c6f688bdcd%3A0x52e700de31013720!2sPariser+Platz!5e0!3m2!1sen!2sca!4v1487174838068" frameborder="0" style="border:0" zoom="16" allowfullscreen></iframe>
-							</div>
+							<div id="map"></div>
+							<script>
+							  function initMap() {
+							    var uluru = {lat: 52.516386, lng: 13.378836};
+							    var map = new google.maps.Map(document.getElementById('map'), {
+							      zoom: 16,
+							      center: uluru,
+							      draggable: false,
+							      scrollwheel: false
+
+							    });
+							    var marker = new google.maps.Marker({
+							      position: uluru,
+							      map: map
+							    });
+							  }
+							</script>
+							<script async defer
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz3WPuWmHTtoCdDCvveiFy_Afb8Yo-_Q4&callback=initMap">
+							</script>
 						</div>
 
 
